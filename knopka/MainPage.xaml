@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="knopka.MainPage"
+             Title="Очистить всё">
+
+    <VerticalStackLayout Padding="20" Spacing="15">
+
+        <Label Text="Имя" FontAttributes="Bold" />
+        <Entry Text="{Binding Name}" Placeholder="Введите имя" />
+
+        <Label Text="Email" FontAttributes="Bold" />
+        <Entry Text="{Binding Email}" Placeholder="Введите email" Keyboard="Email" />
+
+        <Label Text="Телефон" FontAttributes="Bold" />
+        <Entry Text="{Binding Phone}" Placeholder="Введите телефон" Keyboard="Telephone" />
+
+        <Button Text="Очистить всё"
+                Command="{Binding ClearCommand}"
+                BackgroundColor="Red"
+                TextColor="White"
+                HeightRequest="55"
+                Margin="0,30,0,0" />
+
+    </VerticalStackLayout>
+</ContentPage>
